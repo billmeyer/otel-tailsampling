@@ -53,7 +53,7 @@ def main():
         env = "prod-eus2"
         trace_id = checkout(env)
         # print(f"View checkout in Datadog: https://app.datadoghq.com/apm/traces?query=%40otel.trace_id%3A{trace_id}")
-        # trace_id = frontend(env)
+        trace_id = frontend(env)
         # print(f"View frontend trace in Datadog: https://app.datadoghq.com/apm/traces?query=%40otel.trace_id%3A{trace_id}")
 
 if __name__ == "__main__":
